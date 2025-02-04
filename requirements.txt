@@ -1,0 +1,7 @@
+fastapi
+pydantic
+langchain
+langchain-experimental
+sqlalchemy
+pymysql
+uvicorn
