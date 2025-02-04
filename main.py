@@ -35,9 +35,9 @@ langchain = AzureChatOpenAI(
 
 # Configure MySQL Database Connection
 mysql_database_name = "ifb_db"
-mysql_user = "root"
-mysql_password = quote_plus("Stackyon@123")  # Use quote_plus to encode special characters
-mysql_host = "localhost"
+mysql_user = "admin"
+mysql_password = quote_plus("KEgIWoE3aHTESn")  # Use quote_plus to encode special characters
+mysql_host = "stkqadb.c6p27q3bgq8w.us-east-1.rds.amazonaws.com"
 mysql_port = 3306
 
 # Create SQLDatabase connection
