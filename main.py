@@ -42,7 +42,9 @@ mysql_port = 3306
 
 # Create SQLDatabase connection
 sql_database = SQLDatabase.from_uri(
-    f"mysql+pymysql://{mysql_user}:{mysql_password}@{mysql_host}:{mysql_port}/{mysql_database_name}"
+    f"mysql+pymysql://{mysql_user}:{mysql_password}@{mysql_host}:{mysql_port}/{mysql_database_name}",
+    include_tables=None,  # Optional: specify tables you want to reflect
+    reflection_options={"foreign_keys": False}
 )
 
 
