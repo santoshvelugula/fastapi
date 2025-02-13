@@ -34,7 +34,7 @@ langchain = AzureChatOpenAI(
 )
 
 # Configure MySQL Database Connection
-mysql_database_name = "careconnect"
+mysql_database_name = "ifb_db"
 mysql_user = "admin"
 mysql_password = quote_plus("KEgIWoE3aHTESn")  # Use quote_plus to encode special characters
 mysql_host = "stkqadb.c6p27q3bgq8w.us-east-1.rds.amazonaws.com"
