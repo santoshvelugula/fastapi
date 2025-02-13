@@ -96,7 +96,7 @@ sql_agent = create_sql_agent(
     toolkit=toolkit,
     agent_type=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
     verbose=True,
-    agent_executor_kwargs = {"handle_parsing_errors": True},
+    agent_executor_kwargs = {"return_intermediate_steps": True,"handle_parsing_errors": True},
     prompt=promptt
 )
 
