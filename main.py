@@ -53,7 +53,7 @@ sql_db_chain = SQLDatabaseChain.from_llm(llm = langchain, db = sql_database, ver
 
 prompt_template = """You are a SQL expert.
  Use the tools available to answer questions about the database. There are audit columns in every table (like __region_id,__created_by,__last_updated_by,__created_by_name,__last_updated_by_name,__created_on,__last_updated_on,__is_delete,__event_settings,BatchId) dont use in Select query.
- Use Unique regions from tblregion table and Isdefault=1.Any table consider only __is_delete=0.
+ Use Unique regions from tblregion table and Isdefault=1.Any table consider only __is_delete=0 except tblregion which doesn't __is_delete column.
  Parent region is India. Under India , Four Child regions are there.North (North India),West (West India),South (South India), East (East India),Central regions.Under Every Child region, there are branches (regions).if quesion is region Wise then (Sum of their child branches).
  Employee table contains employee Details and empcategory as Employee category ( Consider Only CAPABLE,TRAINER,XP,MASTER,EXPERT and remaining consider as OTHER) And Status as Active or Inactive.
 **IMPORTANT**:
