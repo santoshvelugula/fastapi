@@ -373,9 +373,7 @@ def process_nlp_queryChat(query: str, type: str) -> dict:
 app = FastAPI()
 
 # CORS Configuration
-origins = [
-    "http://localhost:4200",  # Angular development server
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
